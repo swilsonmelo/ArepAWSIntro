@@ -51,17 +51,14 @@ public class RequestHandler {
         in.close();
         clientSocket.close();
     }
-
     
     private void handleRequest(String fileRequested) throws IOException {
         String filePath = "src/main/resources/";
-        String ext = FilenameUtils.getExtension(fileRequested);
-        boolean isImage = false;
+        String ext = FilenameUtils.getExtension(fileRequested);        
         if (ext.equals("html")) {
             filePath += "web-pages/";
         } else if (ext.equals("png")) {
-            filePath += "images/";
-            isImage = true;
+            filePath += "images/";            
         }
         filePath += fileRequested;
         File file = new File(filePath);    
@@ -81,4 +78,5 @@ public class RequestHandler {
                     + "</body>" 
                     + "</html>");
     }
+
 }

@@ -56,6 +56,5 @@ public class FileHandlerImpl implements FileHandler {
 		fileIn.close();
 		os.close();
 	}
-
 	
 }
