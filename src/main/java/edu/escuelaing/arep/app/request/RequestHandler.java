@@ -81,31 +81,4 @@ public class RequestHandler {
                     + "</body>" 
                     + "</html>");
     }
-
-    
-    /*
-    private void handleRequest(String fileRequested) throws IOException{
-        String filePath = "src/main/resources/";
-        String ext = FilenameUtils.getExtension(fileRequested);
-        switch (ext) {
-            case "png":
-                filePath += "images/" + fileRequested;
-                resourceHandler = new ImageResourceHandler(); //change handler for images handler
-                break;
-            case "js":
-                filePath += "js/" + fileRequested;
-                break;
-            case "html":
-                filePath += "web-pages/" + fileRequested;
-                break;
-        }
-        File file = new File(filePath);
-        if (file.exists() && !file.isDirectory()) {
-            resourceHandler.handleResource(file, ext, clientSocket);
-        } else {
-            out.println("HTTP/1.1 404\r\nAccess-Control-Allow-Origin: *\r\n\r\n<html><body><h1>404 NOT FOUND ("+fileRequested+")</h1></body></html>");
-        }
-    }
-    */
-
 }
