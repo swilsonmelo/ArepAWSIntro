@@ -1,8 +1,8 @@
-package edu.escuelaing.arep.app.request;
+package edu.escuelaing.arep.server.request;
 
 import org.apache.commons.io.FilenameUtils;
 
-import edu.escuelaing.arep.app.request.impl.FileHandlerImpl;
+import edu.escuelaing.arep.server.request.impl.FileHandlerImpl;
 
 import java.io.*;
 import java.net.Socket;

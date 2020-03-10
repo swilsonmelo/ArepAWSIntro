@@ -1,12 +1,12 @@
-package edu.escuelaing.arep.app;
-
-import edu.escuelaing.arep.app.request.RequestHandler;
+package edu.escuelaing.arep.server;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import edu.escuelaing.arep.server.request.RequestHandler;
 
 public class HttpServer {
 

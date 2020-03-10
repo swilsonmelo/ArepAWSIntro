@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.app.request;
+package edu.escuelaing.arep.server.request;
 
 import java.io.File;
 import java.io.IOException;

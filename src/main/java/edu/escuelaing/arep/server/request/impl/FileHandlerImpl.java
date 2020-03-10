@@ -1,4 +1,4 @@
-package edu.escuelaing.arep.app.request.impl;
+package edu.escuelaing.arep.server.request.impl;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import edu.escuelaing.arep.app.request.FileHandler;;
+import edu.escuelaing.arep.server.request.FileHandler;;
 
 public class FileHandlerImpl implements FileHandler {
 	
@@ -21,8 +21,7 @@ public class FileHandlerImpl implements FileHandler {
 			imageHandler(file, ext, socket);
 		}else if( ext.equals("html")) {
 			textHandler(file, ext, socket);
-		}
-		
+		}		
 	}
 	
 	public void textHandler(File file, String ext, Socket socket) throws IOException {
